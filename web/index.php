@@ -7,6 +7,9 @@ require('../vendor/autoload.php');
 $app = new Silex\Application();
 $app['debug'] = true;
 
+$dbconn = pg_connect("host=web0.site.uottawa.ca dbname=vraje059 user=vraje059 password=Vedha5456541")
+    or die('Could not connect: ' . pg_last_error());
+
 // Register the monolog logging service
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
   'monolog.logfile' => 'php://stderr',
