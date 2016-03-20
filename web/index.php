@@ -10,6 +10,9 @@ $app['debug'] = true;
 $dbconn = pg_connect("host=web0.site.uottawa.ca port=15432 dbname=vraje059 user=vraje059 password=Vedha545654")
     or die('Could not connect: ' . pg_last_error());
 
+$query = "SELECT * FROM CUSTOMER";
+$result = pg_query($query);
+
 // Register the monolog logging service
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
   'monolog.logfile' => 'php://stderr',
