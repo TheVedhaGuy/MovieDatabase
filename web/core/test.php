@@ -6,14 +6,14 @@ if(empty($_POST['username']) || empty($_POST['password']))
 	echo "No arguments Provided!";
 	return false;
    }
-  //  else {
-  //    echo "lol";
-  //  }
-
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-echo "test.php $username $password";
+   else {
+     echo "lol";
+   }
+//
+// $username = $_POST['username'];
+// $password = $_POST['password'];
+//
+// echo "test.php $username $password";
 
 // $dbconn = pg_connect("host=web0.site.uottawa.ca port=15432 dbname=$username user=$username password=$password")
 //     or die('Could not connect: ' . pg_last_error());
