@@ -21,8 +21,8 @@ $dbconn = pg_connect("host=web0.site.uottawa.ca port=15432 dbname=$username user
 // $dbconn = pg_connect("host=web0.site.uottawa.ca port=15432 dbname=vraje059 user=vraje059 password=Vedha545654")
 //     or die('Could not connect: ' . pg_last_error());
 
-$query = "SELECT * FROM CUSTOMER";
-$result = pg_query($query) or die('Query failed: ' . pg_last_error());
+// $query = "SELECT * FROM CUSTOMER";
+// $result = pg_query($query) or die('Query failed: ' . pg_last_error());
 // echo $result;
 
 // // Printing results in HTML
