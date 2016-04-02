@@ -23,7 +23,7 @@ $(function() {
                 },
                 cache: false,
                 success: function() {
-                  alert(data);
+                  console.log(data);
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
@@ -38,6 +38,7 @@ $(function() {
                     $('#contactForm').trigger("reset");
                 },
                 error: function() {
+                  console.log("lol");
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
