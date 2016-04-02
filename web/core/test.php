@@ -23,7 +23,7 @@ $dbconn = pg_connect("host=web0.site.uottawa.ca port=15432 dbname=$username user
 
 $query = "SELECT * FROM CUSTOMER";
 $result = pg_query($query) or die('Query failed: ' . pg_last_error());
-echo $result;
+// echo $result;
 
 // // Printing results in HTML
 // echo "<table>\n";
