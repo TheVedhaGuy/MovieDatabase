@@ -47,7 +47,7 @@ echo $username;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> <?php echo $username; ?></title>
+    <title> <?php echo "SUCCESS YOU BASTARD"; ?></title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -114,9 +114,9 @@ echo $username;
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name"> "<?php $username ?>" </span>
+                        <span class="name"> <?php echo "Welcome! $username"; ?> </span>
                         <hr class="star-light">
-                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                        <span class="skills">Movie Database - Coming soon</span>
                     </div>
                 </div>
             </div>
