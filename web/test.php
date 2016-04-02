@@ -15,8 +15,8 @@ $password = $_POST['password'];
 $dbconn = pg_connect("host=web0.site.uottawa.ca port=15432 dbname=$username user=$username password=$password")
     or die('Could not connect: ' . pg_last_error());
 
-$query = "SELECT * FROM CUSTOMER";
-$result = pg_query($query) or die('Query failed: ' . pg_last_error());
+//$query = "SELECT * FROM CUSTOMER";
+//$result = pg_query($query) or die('Query failed: ' . pg_last_error());
 
 echo $username;
 
@@ -40,14 +40,14 @@ echo $username;
 <html lang="en">
 
 <head>
-
+	<div> <?php echo $username; ?> </div>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> <?php $username ?></title>
+    <title> <?php echo $username; ?></title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -82,7 +82,7 @@ echo $username;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top"> <?php $username ?></a>
+                <a class="navbar-brand" href="#page-top"> <?php echo $username; ?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -98,7 +98,7 @@ echo $username;
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact"> <?php $username ?></a>
+                        <a href="#contact"> <?php echo $username; ?></a>
                     </li>
                 </ul>
             </div>
