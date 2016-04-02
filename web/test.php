@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title> "<?php $username ?>"</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top"> "<?php $username ?>"</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,7 +61,7 @@
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Login</a>
+                        <a href="#contact"> "<?php $username ?>"</a>
                     </li>
                 </ul>
             </div>
@@ -498,8 +498,6 @@ if(empty($_POST['username']) || empty($_POST['password']))
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-echo "test.php $username $password";
-
 $dbconn = pg_connect("host=web0.site.uottawa.ca port=15432 dbname=$username user=$username password=$password")
     or die('Could not connect: ' . pg_last_error());
 
@@ -518,8 +516,6 @@ while ($line = pg_fetch_array($result, null, PGSQL_ASSOC))
     echo "\t</tr>\n";
 }
 
-echo "</table>\n";
-echo "Hello World";
 
 return true
 
