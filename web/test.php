@@ -34,7 +34,7 @@ $result = pg_query($query) or die('Query failed: ' . pg_last_error());
 //return true
 
 ?>
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
