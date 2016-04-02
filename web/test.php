@@ -1,6 +1,5 @@
 <?php
 
-Check for empty fields
 if(empty($_POST['username']) || empty($_POST['password']))
    {
   echo "No arguments Provided!";
