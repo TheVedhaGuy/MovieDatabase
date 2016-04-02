@@ -47,7 +47,7 @@ echo $username;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> "<?php $username ?>"</title>
+    <title> <?php $username ?></title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -82,7 +82,7 @@ echo $username;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top"> "<?php $username ?>"</a>
+                <a class="navbar-brand" href="#page-top"> <?php $username ?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -98,7 +98,7 @@ echo $username;
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact"> "<?php $username ?>"</a>
+                        <a href="#contact"> <?php $username ?></a>
                     </li>
                 </ul>
             </div>
