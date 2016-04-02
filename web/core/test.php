@@ -1,14 +1,14 @@
 <?php
 
 // Check for empty fields
-if(empty($_POST['username']) || empty($_POST['password']))
-   {
-	echo "No arguments Provided!";
-	return false;
-   }
-   else {
-     echo "lol";
-   }
+// if(empty($_POST['username']) || empty($_POST['password']))
+//    {
+// 	echo "No arguments Provided!";
+// 	return false;
+//    }
+//    else {
+//      echo "lol";
+//    }
 //
 // $username = $_POST['username'];
 // $password = $_POST['password'];
