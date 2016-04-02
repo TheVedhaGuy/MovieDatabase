@@ -23,6 +23,7 @@ $(function() {
                 },
                 cache: false,
                 success: function() {
+                  alert(data);
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
