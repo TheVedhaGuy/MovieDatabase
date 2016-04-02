@@ -60,7 +60,7 @@
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">Login</a>
                     </li>
                 </ul>
             </div>
@@ -216,7 +216,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <input type="submit" class="btn btn-success btn-lg" name="login" value="login">Login</input>
+                                <input type="submit" class="btn btn-success btn-lg" name="login" value="login"></input>
                             </div>
                         </div>
                     </form>
