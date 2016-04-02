@@ -15,7 +15,7 @@
      <meta name="description" content="">
      <meta name="author" content="">
 
-     <title>Test24</title>
+     <title>Test25</title>
 
      <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
