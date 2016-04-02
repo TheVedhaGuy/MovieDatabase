@@ -1,12 +1,14 @@
 <?php
-//
-// // Check for empty fields
-// if(empty($_POST['username'])  		||
-//    empty($_POST['password'])
-//    {
-// 	echo "No arguments Provided!";
-// 	return false;
-//    }
+
+// Check for empty fields
+if(empty($_POST['username']) || empty($_POST['password'])
+   {
+	echo "No arguments Provided!";
+	return false;
+   }
+   else {
+     echo "lol"
+   }
 //
 // $username = $_POST['username'];
 // $password = $_POST['password'];
@@ -27,7 +29,7 @@
 //     echo "\t</tr>\n";
 // }
 // echo "</table>\n";
-echo "Hello World";
+// echo "Hello World"
 
 return true
 
