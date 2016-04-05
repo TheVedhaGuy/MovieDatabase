@@ -52,21 +52,19 @@ INSERT INTO Studio (StudioID, Name, Country) VALUES ('00006','MGM', 'United Stat
 INSERT INTO Studio (StudioID, Name, Country) VALUES ('00007','20th Century Fox', 'United States');
 INSERT INTO Studio (StudioID, Name, Country) VALUES ('00008','Pixar', 'United States');
 
-
-
 --Directs Injections
 INSERT INTO Directs (MovieID, DirectorID) VALUES ('00001','00001'); --Batman/Superman
-INSERT INTO Directs (MovieID, DirectorID) VALUES ('00002','00003'); --Terminator
-INSERT INTO Directs (MovieID, DirectorID) VALUES ('00003','00007'); --Deadpool
+INSERT INTO Directs (MovieID, DirectorID) VALUES ('00002','00002'); --Terminator
+INSERT INTO Directs (MovieID, DirectorID) VALUES ('00003','00003'); --Deadpool
 INSERT INTO Directs (MovieID, DirectorID) VALUES ('00004','00004'); --Jurassic World
-INSERT INTO Directs (MovieID, DirectorID) VALUES ('00005','00007'); --X-Men Apocolypse
-INSERT INTO Directs (MovieID, DirectorID) VALUES ('00006','00001'); --Suicide Squad
-INSERT INTO Directs (MovieID, DirectorID) VALUES ('00007','00005'); --The Jungle Book
-INSERT INTO Directs (MovieID, DirectorID) VALUES ('00008','00001'); --Mad Max
-INSERT INTO Directs (MovieID, DirectorID) VALUES ('00009','00006'); --Creed
-INSERT INTO Directs (MovieID, DirectorID) VALUES ('00010','00008'); --Inside Out
+INSERT INTO Directs (MovieID, DirectorID) VALUES ('00005','00005'); --X-Men Apocolypse
+INSERT INTO Directs (MovieID, DirectorID) VALUES ('00006','00006'); --Suicide Squad
+INSERT INTO Directs (MovieID, DirectorID) VALUES ('00007','00007'); --The Jungle Book
+INSERT INTO Directs (MovieID, DirectorID) VALUES ('00008','00008'); --Mad Max
+INSERT INTO Directs (MovieID, DirectorID) VALUES ('00009','00009'); --Creed
+INSERT INTO Directs (MovieID, DirectorID) VALUES ('00010','00010'); --Inside Out
 
---Actor Stars Injections
+--ActorStars Injections
 INSERT INTO ActorStars (MovieID, ActorID) VALUES ('00001','00001'); --Batman/Superman
 INSERT INTO ActorStars (MovieID, ActorID) VALUES ('00001','00002'); --Batman/Superman
 INSERT INTO ActorStars (MovieID, ActorID) VALUES ('00001','00003'); --Batman/Superman
@@ -84,4 +82,21 @@ INSERT INTO ActorStars (MovieID, ActorID) VALUES ('00008','00014'); --Mad Max
 INSERT INTO ActorStars (MovieID, ActorID) VALUES ('00009','00015'); --Creed
 INSERT INTO ActorStars (MovieID, ActorID) VALUES ('00010','00016'); --Inside out
 INSERT INTO ActorStars (MovieID, ActorID) VALUES ('00010','00017'); --Inside out
+
+--Sponsors Injections
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00001','00001'); --Batman/Superman
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00001','00003'); --Terminator
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00001','00007'); --Deadpool
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00001','00004'); --Jurassic World
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00001','00007'); --X-Men Apocolypse
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00001','00001'); --Suicide Squad
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00001','00005'); --The Jungle Book
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00001','00001'); --Mad Max
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00001','00006'); --Creed
+INSERT INTO Sponsors (StudioID, MovieID) VALUES ('00008','00008'); --Inside out
+
+--User Injection
+INSERT INTO Users (UserID, password, lastname, firstname, email, city, province, country) VALUES ('TomJ','password', 'Jarrod', 'Tom', 'TJ@gmail.com', 'Ottawa', 'Ontario', 'Canada'); 
+INSERT INTO Users (UserID, password, lastname, firstname, email, city, province, country) VALUES ('MovieMan','password', 'Riddle', 'Rory', 'Rawrman@gmail.com', 'Toronto', 'Ontario', 'Canada');
+INSERT INTO Users (UserID, password, lastname, firstname, email, city, province, country) VALUES ('SassySuz','password', 'McDonald', 'Susie', 'latheritnice@gmail.com', 'Mississauga', 'Ontario', 'Canada');
 
