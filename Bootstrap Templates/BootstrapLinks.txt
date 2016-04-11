@@ -1,0 +1,11 @@
+Bootstrap Websites t use 
+
+Possible Front page
+http://startbootstrap.com/template-overviews/thumbnail-gallery/
+
+Possible Movie Page/Actor/Director Page
+http://startbootstrap.com/template-overviews/portfolio-item/
+
+To use in the front page?
+http://startbootstrap.com/template-overviews/simple-sidebar/
+

@@ -58,8 +58,12 @@ CREATE TABLE Movie
 MovieID VARCHAR(20) PRIMARY KEY UNIQUE,
 Name VARCHAR(20),
 Releasedate DATE,
---the lower limit for what ages should watch this movie
-MPAARating INTEGER
+--the mpaa rating is the rating given by the MPAA
+MPAARating VARCHAR(5),
+Description TEXT,
+
+--the 
+TrailerLink TEXT
 );
 
 --relation between user and a movie
@@ -72,7 +76,7 @@ Rating INTEGER,
 PRIMARY KEY(UserID, MovieID),
 FOREIGN KEY(UserID) REFERENCES Users,
 FOREIGN KEY(MovieID) REFERENCES Movie,
-CHECK (RATING < 0 AND RATING < 6)
+CHECK (RATING > 0 AND RATING < 6)
 );
 
 --relation between movie and topic
@@ -104,7 +108,9 @@ CREATE TABLE Role
 RoleID VARCHAR(10) PRIMARY KEY UNIQUE,
 Name VARCHAR(20),
 ActorID VARCHAR(10),
-FOREIGN KEY (ActorID) REFERENCES Actor
+MovieId VARCHAR(20),
+FOREIGN KEY (ActorID) REFERENCES Actor,
+FOREIGN KEY (MovieID) REFERENCES Movie
 );
 
 CREATE TABLE ActorStars
